@@ -23,5 +23,6 @@ export function reducer(state = initialState, action) {
       return { ...state, fetching: false, dog: null, error: action.error };
       break;
     default:
+      return state;
   }
 }
